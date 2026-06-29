@@ -18,10 +18,6 @@ class StudentManager:
         self.students.append(new_student)
         return True
     
-    def sort_alphabetically(self):
-        """Sorts the tracking list in-place by student name property."""
-        self.students.sort(key=lambda s: s.name.lower())
-
     def view_students(self):
         """Sorts and returns the collection of Student objects."""
         return sorted(self.students, key=lambda s:s.name.lower())
